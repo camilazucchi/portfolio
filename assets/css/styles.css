@@ -1,0 +1,50 @@
+@import url(normalize.css);
+@import url(_variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark-primary);
+    color: var(--light-primary);
+}
+
+/* MOBILE-FIRST */
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__navbar {
+    border: 1px solid palegoldenrod;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header__navbar-logo {
+    font-size: var(--font-size-sm);
+    font-family: "Inconsolata", monospace;
+}
+
+.header__navbar-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: .875rem;
+}
+
+.header__navbar-link {
+    color: var(--light-primary);
+    font-size: var(--font-size-xs);
+}
+
