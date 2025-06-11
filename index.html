@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cami's Portfolio</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cami's Portfolio</title>
+	</head>
+	<body>
+		<!-- 1. Cabeçalho (<header>) com nome completo, uma frase e uma foto. ✅ -->
+		<header class="header" id="header">
+			<!-- 2. Menu de navegação (<nav>) com links que levam para as seções da própria página. ✅ -->
+			<nav class="header__navbar">
+                <h1 class="header__navbar-logo">cami</h1>
+				<ul class="header__navbar-list">
+					<li class="header__navbar-item"><a class="header__navbar-link" href="#">Item 1</a></li>
+					<li class="header__navbar-item"><a class="header__navbar-link" href="#">Item 2</a></li>
+					<li class="header__navbar-item"><a class="header__navbar-link" href="#">Item 3</a></li>
+					<li class="header__navbar-item"><a class="header__navbar-link" href="#">Item 4</a></li>
+				</ul>
+			</nav>
+
+			<h2 class="header__title">Hello, I'm Cami.</h2>
+			<p class="header__text">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi similique
+				fugiat quidem voluptate expedita quam quos explicabo voluptas deserunt
+				commodi, laborum odit perferendis consectetur dolore dignissimos
+				reiciendis! Quisquam, sed velit?
+			</p>
+			<!-- TODO: Inserir uma imagem aqui -->
+		</header>
+
+		<!-- 3. Corpo principal (<main>) com... -->
+		<main class="main">
+			<!-- 4. Seção "Sobre Mim" (fale um pouco sobre você). ✅ -->
+			<section class="about">
+				<h2 class="about__title">Sobre Mim</h2>
+				<p class="about__text">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+					vitae voluptates corrupti rem culpa doloremque facilis accusantium ea.
+					Odit dignissimos consequatur magni atque debitis quidem exercitationem
+					ipsa iusto, necessitatibus recusandae.
+				</p>
+			</section>
+
+			<!-- 5. Seção "Habilidades" (liste seus conhecimentos). ✅ -->
+			<section class="skills">
+				<h2 class="skills__title">Habilidades</h2>
+                <ul class="skills__list">
+                    <li class="skills__list-item">HTML</li>
+                    <li class="skills__list-item">CSS</li>
+                    <li class="skills__list-item">JavaScript</li>
+                    <li class="skills__list-item">Java</li>
+                </ul>
+			</section>
+
+			<!-- 6. Seção "Projetos" (mostre 2 projetos, pode ser fictício, usando <article>). ✅ -->
+			<section class="projects">
+				<article class="projects__article">
+					<h3 class="projects__article-title">Projeto 1</h3>
+					<p class="projects__article-text">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+						fuga molestias, architecto aut ab vero ea quia nisi, aspernatur
+						porro iure voluptatum nobis suscipit voluptas sapiente! Ipsum, ipsam
+						aspernatur! Aspernatur!
+					</p>
+				</article>
+				<article class="projects__article">
+					<h3 class="projects__article-title">Projeto 2</h3>
+					<p class="projects__article-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id
+						labore necessitatibus nostrum laborum, minus excepturi. Voluptatem
+						pariatur, corporis dolor nemo architecto iste dicta sequi tempora,
+						dolorem id aut quis!
+					</p>
+				</article>
+			</section>
+
+			<!-- 7. Informações extras (<aside>) com curiosidades, hobbies ou links úteis (GitHub, Instagram ou LinkedIn). ✅ -->
+			<aside class="curiosities">
+				<h3 class="curiosities__title">Curiosidades</h3>
+				<p class="curiosities__text">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
+					ipsum illum vitae pariatur beatae, facilis exercitationem sunt magni
+					dolorem repudiandae, veniam optio atque? Quis laudantium vel possimus,
+					explicabo rerum delectus.
+				</p>
+			</aside>
+		</main>
+
+		<!-- 8. Rodapé (<footer>) com informações para contato (exemplo: e-mail) e direitos autorais. ✅ -->
+		<footer class="footer">
+			<h3 class="footer__title">Contato</h3>
+			<p class="footer__email">Meu e-mail aqui.</p>
+			<p class="footer__copyright">&copy; 2025 Cami's Portfolio. Todos os direitos reservados.</p>
+		</footer>
+	</body>
 </html>
