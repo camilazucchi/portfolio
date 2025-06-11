@@ -6,6 +6,11 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,16 +23,17 @@ body {
 .header {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding: var(--spacing-md);
 }
 
 .header__navbar {
-    border: 1px solid palegoldenrod;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: var(--spacing-md);
 }
 
 .header__navbar-logo {
@@ -39,8 +45,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    list-style: none;
-    gap: .875rem;
+    gap: var(--spacing-sm);
 }
 
 .header__navbar-link {
@@ -48,3 +53,163 @@ body {
     font-size: var(--font-size-xs);
 }
 
+.header__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.header__content-title {
+    font-size: var(--font-size-lg);
+    font-family: "Inconsolata", monospace;
+}
+
+.header__content-text {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-xl);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: var(--spacing-md);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: var(--spacing-md);
+    gap: var(--spacing-md);
+
+}
+
+.about__title {
+    font-size: var(--font-size-lg);
+    font-family: "Inconsolata", monospace;
+}
+
+.about__text {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-xl);
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: var(--spacing-md);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.skills__title {
+    font-size: var(--font-size-lg);
+    font-family: "Inconsolata", monospace;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+    gap: var(--spacing-md);
+}
+
+.projects__article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.projects__article-title {
+    font-size: var(--font-size-lg);
+    font-family: "Inconsolata", monospace;
+}
+
+.projects__article-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.projects__article-item {
+    font-size: var(--font-size-xs);
+    font-family: "Inconsolata", monospace;
+
+}
+
+.projects__article-text {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-xl);
+}
+
+.curiosities {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+    gap: var(--spacing-md);
+}
+
+.curiosities__title {
+    font-size: var(--font-size-lg);
+    font-family: "Inconsolata", monospace;
+}
+
+.curiosities__text {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-xl);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: var(--spacing-md);
+    gap: var(--spacing-md);
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    gap: var(--spacing-md);
+}
+
+.footer__title {
+    font-size: var(--font-size-sm);
+    font-family: "Inconsolata", monospace;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md);
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: var(--font-size-xs);
+}
