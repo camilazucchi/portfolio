@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Cami's Portfolio</title>
 		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Mono:wght@400;500;600;700&display=swap"
 			rel="stylesheet"
@@ -22,98 +23,108 @@
 			<!-- 2. Menu de navegação (<nav>) com links que levam para as seções da própria página. ✅ -->
 			<nav class="header__navbar">
 				<h1 class="header__navbar-logo">&lt;cami/&gt;</h1>
-				<ul class="header__navbar-list">
+				<button class="header__navbar-btn" id="toggle-btn"><img class="header__navbar-svg--toggle" id="toggle-img" src="assets/img/dropdown.svg"></button>
+				<ul class="header__navbar-list hidden" id="dropdown-menu">
 					<li class="header__navbar-item">
-						<a class="header__navbar-link" href="#">Item 1</a>
+						<a class="header__navbar-link" href="#about">Sobre Mim</a>
 					</li>
 					<li class="header__navbar-item">
-						<a class="header__navbar-link" href="#">Item 2</a>
+						<a class="header__navbar-link" href="#skills">Habilidades</a>
 					</li>
 					<li class="header__navbar-item">
-						<a class="header__navbar-link" href="#">Item 3</a>
+						<a class="header__navbar-link" href="#projects">Projetos</a>
 					</li>
 					<li class="header__navbar-item">
-						<a class="header__navbar-link" href="#">Item 4</a>
+						<a class="header__navbar-link" href="#curiosities">Curiosidades</a>
 					</li>
 				</ul>
 			</nav>
 
 			<div class="header__content">
-				<h2 class="header__content-title">Hello, I'm Cami.</h2>
-				<p class="header__content-text">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-					similique fugiat quidem voluptate expedita quam quos explicabo
-					voluptas deserunt commodi, laborum odit perferendis consectetur dolore
-					dignissimos reiciendis! Quisquam, sed velit?
-				</p>
+				<h2 class="header__content-title">Camila Zucchi</h2>
+				<div class="header__content-wrapper">
+					<span class="header__content-subtitle"
+						>Desenvolvedora Full-Stack</span
+					>
+				</div>
+
+				<blockquote class="header__content-text">
+					"A imaginação é a faculdade da descoberta. É aquilo que penetra o
+					invisível."
+					<cite>Ada Lovelace</cite>
+				</blockquote>
 				<!-- TODO: Inserir uma imagem aqui -->
+				<img class="header__content-img" src="assets/img/avatar.png" />
 			</div>
 		</header>
 
 		<!-- 3. Corpo principal (<main>) com... -->
 		<main class="main">
 			<!-- 4. Seção "Sobre Mim" (fale um pouco sobre você). ✅ -->
-			<section class="about">
+			<section class="about" id="about">
 				<h2 class="about__title">Sobre Mim</h2>
 				<p class="about__text">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-					vitae voluptates corrupti rem culpa doloremque facilis accusantium ea.
-					Odit dignissimos consequatur magni atque debitis quidem exercitationem
-					ipsa iusto, necessitatibus recusandae.
+					Sou estudante de <em>Análise e Desenvolvimento de Sistemas</em> e atualmente
+					atuo como estagiária em <b>Desenvolvimento Full-Stack</b> na Compass UOL.
+					Minha jornada na programação começou antes mesmo de eu saber o que
+					eram HTML e CSS — eu tinha quinze anos quando comecei a personalizar
+					temas do Tumblr, e foi assim que me apaixonei por programar.
 				</p>
 			</section>
 
 			<!-- 5. Seção "Habilidades" (liste seus conhecimentos). ✅ -->
-			<section class="skills">
+			<section class="skills" id="skills">
 				<h2 class="skills__title">Habilidades</h2>
 				<ul class="skills__list">
 					<li class="skills__list-item">HTML</li>
 					<li class="skills__list-item">CSS</li>
 					<li class="skills__list-item">JavaScript</li>
+					<li class="skills__list-item">TypeScript</li>
+					<li class="skills__list-item">React</li>
+					<li class="skills__list-item">Node.js</li>
+					<li class="skills__list-item">NestJS</li>
 					<li class="skills__list-item">Java</li>
+					<li class="skills__list-item">Spring Boot</li>
+					<li class="skills__list-item">Postman</li>
+					<li class="skills__list-item">Git</li>
+					<li class="skills__list-item">GitHub</li>
 				</ul>
 			</section>
 
 			<!-- 6. Seção "Projetos" (mostre 2 projetos, pode ser fictício, usando <article>). ✅ -->
-			<section class="projects">
+			<section class="projects" id="projects">
+				<h3 class="projects__title">Projetos</h3>
 				<article class="projects__article">
-					<h3 class="projects__article-title">Projeto 1</h3>
+					<h4 class="projects__article-title">Relógio Digital</h4>
 					<ul class="projects__article-list">
 						<li class="projects__article-item">HTML</li>
 						<li class="projects__article-item">CSS</li>
 						<li class="projects__article-item">JavaScript</li>
+						<li class="projects__article-item">TypeScript</li>
+						<li class="projects__article-item">SCSS</li>
 					</ul>
 					<p class="projects__article-text">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-						fuga molestias, architecto aut ab vero ea quia nisi, aspernatur
-						porro iure voluptatum nobis suscipit voluptas sapiente! Ipsum, ipsam
-						aspernatur! Aspernatur!
+						O projeto <b>Relógio Digital</b> é uma aplicação desenvolvida com HTML, CSS e JavaScript com a finalidade de exibir a hora atual em formato digital.
 					</p>
+					<a class="project__article-link" href="https://digital-clock-snowy-psi.vercel.app/">Ver mais<img class="project__article-img" src="assets/img/arrow.svg"></a>
 				</article>
 				<article class="projects__article">
-					<h3 class="projects__article-title">Projeto 2</h3>
+					<h4 class="projects__article-title">Via CEP</h4>
 					<ul class="projects__article-list">
-						<li class="projects__article-item">HTML</li>
-						<li class="projects__article-item">CSS</li>
-						<li class="projects__article-item">JavaScript</li>
+						<li class="projects__article-item">Java</li>
 					</ul>
 					<p class="projects__article-text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id
-						labore necessitatibus nostrum laborum, minus excepturi. Voluptatem
-						pariatur, corporis dolor nemo architecto iste dicta sequi tempora,
-						dolorem id aut quis!
+						O Projeto <b>ViaCEP</b> é uma aplicação Java que interage com a API pública do ViaCEP para obter informações detalhadas de endereços com base no CEP fornecido pelo usuário. O objetivo do projeto é aprender sobre o consumo de API com Java.
 					</p>
+					<a class="project__article-link" href="https://github.com/camilazucchi/via-cep">Ver mais<img class="project__article-img" src="assets/img/arrow.svg"></a>
 				</article>
 			</section>
 
 			<!-- 7. Informações extras (<aside>) com curiosidades, hobbies ou links úteis (GitHub, Instagram ou LinkedIn). ✅ -->
-			<aside class="curiosities">
+			<aside class="curiosities" id="curiosities">
 				<h3 class="curiosities__title">Curiosidades</h3>
 				<p class="curiosities__text">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
-					ipsum illum vitae pariatur beatae, facilis exercitationem sunt magni
-					dolorem repudiandae, veniam optio atque? Quis laudantium vel possimus,
-					explicabo rerum delectus.
+					Alguns dos meus hobbies incluem ler mangás, assistir animes, jogar jogos eletrônicos, brincar com meus gatinhos e estudar.
 				</p>
 			</aside>
 		</main>
@@ -123,14 +134,15 @@
 			<div class="footer__content">
 				<h3 class="footer__title">&lt;cami/&gt;</h3>
 				<ul class="footer__list">
-					<li class="footer__list-item">Item</li>
-					<li class="footer__list-item">Item</li>
-					<li class="footer__list-item">Item</li>
+					<li class="footer__list-item"><a href="https://www.linkedin.com/in/camilazucchi/"><img class="footer__list-img" src="assets/img/linkedin.svg"></a></li>
+					<li class="footer__list-item"><a href="https://github.com/camilazucchi"><img class="footer__list-img" src="assets/img/github.svg"></a></li>
+					<li class="footer__list-item"><a href="mailto:camilazucchi@outlook.com"><img class="footer__list-img" src="assets/img/email.svg"></a></li>
 				</ul>
 			</div>
 			<p class="footer__copyright">
-					&copy; 2025 Cami's Portfolio. Todos os direitos reservados.
-				</p>
+				&copy; 2025 Cami's Portfolio. Todos os direitos reservados.
+			</p>
 		</footer>
+		<script src="assets/script/dropdown.js"></script>
 	</body>
 </html>
